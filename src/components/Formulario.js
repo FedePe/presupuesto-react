@@ -24,7 +24,7 @@ const Formulario = () => {
             </div>
 
             <input
-                tyoe="submit"
+                type="submit"
                 className="button-primary u-full-width"
                 value="Agregar Gasto"
             />
