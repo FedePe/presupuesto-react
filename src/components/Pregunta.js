@@ -10,11 +10,22 @@ const Pregunta = () => {
         guardarCantidad(parseInt(e.target.value, 10));    
     }
 
+    // Submit para definir el presupuesto
+    const agregarPresupuesto = e => {
+        e.preventDefault();
+
+        // Validar
+
+        // si se pasa la validación
+        
+    }
+
     return ( 
         <Fragment>
             <h2>Coloca tu presupuesto</h2>
 
-            <form>
+            <form
+                onSubmit={agregarPresupuesto}>
                 <input
                     type="number"
                     className="u-full-width"
