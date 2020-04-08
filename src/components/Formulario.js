@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import Error from './Error';
 import shortid from 'shortid';
 
-const Formulario = () => {
+const Formulario = ({agregarNuevoGasto}) => {
 
     const [nombre, guardarNombre] = useState('');
     // Lo inicialice en '' y no en 0 porque si escribo 
@@ -31,8 +31,11 @@ const Formulario = () => {
         console.log(gasto);
 
         // pasar el gasto al componente principal
+        agregarNuevoGasto(gasto);
 
-        //resetear el form
+        // resetear el form
+        guardarNombre('');
+        guardarCantidad('');
     }
 
     return ( 
